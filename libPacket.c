@@ -1,6 +1,6 @@
 //Dpak Malla
 //mmallad
-#include "/media/Backup/Projects/Packet/PacketCapture/libPacket.h"
+#include "libPacket.h"
 int main()
 {
 	//printf("Hello");
