@@ -17,8 +17,12 @@ int main()
 		return 0;
 	}
 	//Here you can show which device you are listening.
-	printf("Device %s",dev);
+	//printf("Device %s",dev);
 	//Start the capture logic
+	
+	//Note Please use your device name in which you want to listen.
+	//Better use 
+	//handle = pcap_open_live(dev,65535,1,0,e_buff);
 	handle = pcap_open_live("wlan0",65535,1,0,e_buff);
 	//Check handle if it is null
 	if(handle == NULL)
